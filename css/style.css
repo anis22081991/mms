@@ -64,6 +64,12 @@ Text Domain: Logistcwr
 .container {
   max-width: 1396px;
 }
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 0!important;
+}
+
 .book__container {
   max-width: 1683px;
   background: var(--st-bg);
@@ -151,7 +157,7 @@ Text Domain: Logistcwr
   width: 112px;
   z-index: -1;
 }
-.style2.st-header-top-area::after {
+/*.style2.st-header-top-area::after {
   position: absolute;
   content: "";
   top: 0;
@@ -160,7 +166,7 @@ Text Domain: Logistcwr
   height: 100%;
   width: 203px;
   z-index: -1;
-}
+}*/
 .style2.st-header-top-area .st-header-top-info ul li a{
   color: var(--st-theme-color-two);
 }
@@ -168,11 +174,11 @@ Text Domain: Logistcwr
   color: var(--st-theme-color-two);
 }
 .style2.st-header-top-area .st-header-top-social ul li a{
-  color: var(--st-theme-color-two);
+  color: #0047ba;
 }
 .style2.st-header-top-area .st-header-top-social {
-  text-align: left;
-  display: inline-block;
+  text-align: right;
+ /* display: inline-block;*/
 }
 .header-top-btn {
   display: inline-block;
@@ -3571,5 +3577,61 @@ button.st__btn {
 .service__Details__btn a:hover{
   background: #0047ba;
 }
+
+
+/* Barre de rrcherche code */
+
+.lang-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 12px;
+  border: 2px solid #fff;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.lang-btn:hover {
+  background-color: #003d4d;
+  color: #ffffff !important;
+  border-color: #003d4d;
+}
+/* Popup recherche */
+.search-popup {
+  position: absolute;
+  top: 40px; /* Ajuste selon ton header */
+  right: 0;
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-width: 220px;
+}
+.search-form-inline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-form-inline input {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+.search-form-inline button {
+  background-color: #0047ba;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 
